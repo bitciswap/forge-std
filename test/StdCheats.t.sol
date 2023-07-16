@@ -361,7 +361,7 @@ contract StdCheatsTest is Test {
 
         // Create2Deployer
         vm.expectRevert();
-        stdCheatsMock.exposed_assumePayable(0x4e59b44847b379578588920cA78FbF26c0B4956C);
+        stdCheatsMock.exposed_assumePayable(0xEf9590d6A22591f04777c1ef14Cdf8B244d6CB98);
 
         // all should pass since these addresses are payable
 
@@ -386,7 +386,7 @@ contract StdCheatsTest is Test {
         stdCheatsMock.exposed_assumeNotPayable(0x000000000000000000636F6e736F6c652e6c6f67);
 
         // Create2Deployer
-        stdCheatsMock.exposed_assumeNotPayable(0x4e59b44847b379578588920cA78FbF26c0B4956C);
+        stdCheatsMock.exposed_assumeNotPayable(0xEf9590d6A22591f04777c1ef14Cdf8B244d6CB98);
 
         // all should revert since these addresses are payable
 
