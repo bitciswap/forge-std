@@ -212,6 +212,9 @@ abstract contract StdChains {
             "bnb_smart_chain", ChainData("BNB Smart Chain", 56, "https://bsc-dataseed1.binance.org")
         );
         setChainWithDefaultRpcUrl(
+            "bitci", ChainData("BITCI Chain", 1907, "https://rpc.bitci.com")
+        );
+        setChainWithDefaultRpcUrl(
             "bnb_smart_chain_testnet",
             ChainData("BNB Smart Chain Testnet", 97, "https://rpc.ankr.com/bsc_testnet_chapel")
         );
